@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Data Binding</title>
+  </head>
+  <body>
+    <div class="data-binding">
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" type="text" v-model="name" />
+        <label for="age">Age:</label>
+        <input id="age" type="number" v-model="age" />
+      </div>
+      <div>
+        <span>Name:{{name}}</span>
+      </div>
+      <div>
+        <span>Age:{{age}}</span>
+      </div>
+    </div>
+    <script src="databinding.js"></script>
+  </body>
+</html>

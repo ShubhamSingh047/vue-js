@@ -4,7 +4,10 @@ new Vue({
       title:"Hello",
       link:"https://www.google.com/", 
       name:"shubham",
-      finishedLink:'<a href="https://www.google.com/">Google</a>'
+      finishedLink:'<a href="https://www.google.com/">Google</a>',
+      count:0,
+      x:0,
+      y:0
     },
     methods:{
       chnageTitile:function (event) {
@@ -13,6 +16,13 @@ new Vue({
       sayName:function(){
         this.name = "singh!"
         return this.name;
+      },
+      incrmentCount:function(e){
+        this.count+=e;
+      },
+      updateCoordinate:function(e){
+        this.x=e.clientX;
+        this.y=e.clientY;
       }
     }
 
